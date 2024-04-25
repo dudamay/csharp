@@ -23,7 +23,7 @@ public string CPF{
 }
     }
 }
-public class Estudante;Pessoa{
+public class Estudante : Pessoa{
     private String curso;
 
     public Estudante(string nome, int idade,string cpf,string curso): base(nome,idade,cpf){
@@ -50,12 +50,12 @@ public string Salario{
 }
 }
 
-public class: Funcionario{
+public class Diretor: Funcionario{
     public Diretor(string nome,int idade,string cpf,double salario):base(nome,idade,cpf,salario){
 
     }
     public override double Bonus{
         return base.Bonus()+1000;
-        
+
     }
 }
